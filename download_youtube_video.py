@@ -11,10 +11,6 @@ def sanitize_filename(filename):
     # Remove special characters and spaces from the filename
     return re.sub(r'[^a-zA-Z0-9]', '', filename)
 
-def sanitize_filename(filename):
-    # Remove special characters and spaces from the filename
-    return re.sub(r'[^a-zA-Z0-9]', '', filename)
-
 def download_youtube_video_dl(link):
     # Using youtube-dl to get the video title
     title = subprocess.getoutput(f'youtube-dl --get-title {link}')
